@@ -3,7 +3,9 @@ import 'package:ff_pos/data/models/category_model.dart';
 import 'package:ff_pos/domain/repositories/category_repository.dart';
 
 class CategoryRepositoryImpl implements CategoryRepository {
-  static final db = LocalDatabase.instance;
+  final LocalDatabase db;
+
+  CategoryRepositoryImpl(this.db);
 
   @override
   Future<List<CategoryModel>> getAllCategories() async {

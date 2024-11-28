@@ -3,7 +3,9 @@ import 'package:ff_pos/data/models/food_model.dart';
 import 'package:ff_pos/domain/repositories/food_repository.dart';
 
 class FoodRepositoryImpl implements FoodRepository {
-  static final db = LocalDatabase.instance;
+  final LocalDatabase db;
+
+  FoodRepositoryImpl(this.db);
 
   @override
   Future<List<FoodModel>> getAllFoods() {
