@@ -48,6 +48,35 @@ class _MyHomePageState extends State<MyHomePage> {
         selectedItemColor: Theme.of(context).colorScheme.primary,
         onTap: _onItemTapped,
       ),
+      drawer: Drawer(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(
+                color: Theme.of(context).colorScheme.primary,
+              ),
+              child: const Text(
+                'Data',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            ListTile(
+              leading: const Icon(Icons.category),
+              title: const Text('Category'),
+              onTap: () {},
+            ),
+            ListTile(
+              leading: const Icon(Icons.fastfood),
+              title: const Text('Food'),
+              onTap: () {},
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
