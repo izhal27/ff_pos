@@ -1,5 +1,5 @@
-import 'package:ff_pos/screens/dashboard_screen.dart';
-import 'package:ff_pos/screens/setting_screen.dart';
+import 'package:ff_pos/presentation/screens/dashboard_screen.dart';
+import 'package:ff_pos/presentation/screens/setting_screen.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {

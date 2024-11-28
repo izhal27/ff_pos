@@ -1,4 +1,4 @@
-import 'package:ff_pos/screens/home.dart';
+import 'package:ff_pos/presentation/screens/home.dart';
 import 'package:flutter/material.dart';
 
 var kColorScheme = ColorScheme.fromSeed(
